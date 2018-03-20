@@ -12,7 +12,7 @@ title: Archive
 <ul>
   {% for post in month.items %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     {{ post.excerpt }}
   </li>
   {% endfor %}
