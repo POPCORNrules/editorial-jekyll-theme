@@ -13,6 +13,7 @@ title: Archive
   {% for post in month.items %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.excerpt }}
   </li>
   {% endfor %}
 </ul>
