@@ -21,7 +21,7 @@
             <li>
               <span class="opener">News</span>
                 <ul>
-                  {% for post in site.posts %}
+                  {% for post in site.posts limit:5 %}
                   <li>
                     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                   </li>
